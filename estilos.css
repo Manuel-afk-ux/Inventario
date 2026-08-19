@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #121212;
+    color: #ddd;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 18px 30px;
+}
+
+.navbar h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ===== Contenedor principal ===== */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ===== Paneles ===== */
+.panel-formulario,
+.panel-tabla {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.panel-formulario .titulo,
+.panel-tabla .titulo {
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #333;
+}
+
+/* ===== Formulario ===== */
+.panel-formulario form {
+    padding: 20px;
+}
+
+.campo {
+    margin-bottom: 14px;
+}
+
+.campo label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #aaa;
+}
+
+.campo input {
+    width: 100%;
+    padding: 9px 10px;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #eee;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.fila-doble {
+    display: flex;
+    gap: 15px;
+}
+
+.fila-doble .campo {
+    flex: 1;
+}
+
+.btn-guardar {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-guardar:hover {
+    background-color: #444;
+}
+
+/* ===== Tabla ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #aaa;
+    border-bottom: 1px solid #333;
+}
+
+tbody td {
+    padding: 12px 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #262626;
+}
+
+tbody tr:hover {
+    background-color: #202020;
+}
+
+.acciones {
+    display: flex;
+    gap: 6px;
+}
+
+.btn-accion {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.btn-editar {
+    background-color: #3a6b45;
+}
+
+.btn-eliminar {
+    background-color: #7a3a3a;
+}
+
+.sin-registros {
+    padding: 20px;
+    text-align: center;
+    color: #888;
+}
